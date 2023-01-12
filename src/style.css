@@ -1,13 +1,23 @@
 @import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
 
-* {
+/* Resetear (anular propiedades) el HTML, siempre hacerlo al principio */
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 1 rem equivale a 16px */
+  font-size: 1rem;
   font-family: 'Helvetica Neue';
 }
 
-html,
 body {
-  height: 100%;
-  display: flex;
+  min-height: 100vh;
+  background-color: #ffc845;
 }
 
 header {
@@ -19,11 +29,10 @@ header {
 }
 
 main {
-  background: #ffc845;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 20px;
 }
 
 label {
