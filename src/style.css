@@ -1,8 +1,65 @@
 @import url("/node_modules/@fortawesome/fontawesome-free/css/all.min.css");
 
+* {
+  font-family: 'Helvetica Neue';
+}
+
 header {
   background: #279989;
+  color: white;
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+
+main {
+  background: #ffc845;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+label {
+  display: flex;
+  align-items: center;
+}
+
+input[type=checkbox] {
+  flex: none;
+}
+
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sum-button {
+  display: flex;
+  background: #44a080;
+  color: white;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.fa-solid {
+  justify-content: center;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex: 1;
+}
+
+.list {
+  flex: 1;
+}
+
+.prices {
+  flex: 1;
+  justify-content: flex-end;
 }
