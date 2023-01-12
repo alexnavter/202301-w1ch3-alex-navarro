@@ -4,6 +4,12 @@
   font-family: 'Helvetica Neue';
 }
 
+html,
+body {
+  height: 100%;
+  display: flex;
+}
+
 header {
   background: #279989;
   color: white;
@@ -14,6 +20,7 @@ header {
 
 main {
   background: #ffc845;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
